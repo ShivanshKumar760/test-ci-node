@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: node-api-in-mem
-          image: <Image>
+          image: shivansh760/node-api:latest
           resources:
             limits:
               memory: "128Mi"

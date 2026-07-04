@@ -5,6 +5,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.use(express.json());
 
 const userDB = [];
 

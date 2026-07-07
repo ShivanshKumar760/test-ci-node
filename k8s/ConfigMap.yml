@@ -1,6 +1,17 @@
+# apiVersion: v1
+# kind: ConfigMap
+# metadata:
+#   name: node-api-config
+# data:
+#   PORT: "3000"
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: node-api-config
 data:
   PORT: "3000"
+  DB_USER: "postgres"
+  DB_HOST: "postgres-service" # CHANGED FROM LOCALHOST: Crucial for Kubernetes networking
+  DB_NAME: "testDB"
+  DB_PORT: "5432"
